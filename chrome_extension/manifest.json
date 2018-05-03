@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "Zero Width Scout",
+	"version": "1.0",
+	"description": "Replaces invisible zero width characters in websites with visible, descriptive strings",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_idle"
+		}
+	]
+}
